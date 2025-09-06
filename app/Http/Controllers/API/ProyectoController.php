@@ -32,7 +32,6 @@ class ProyectoController extends Controller
         return response()->json($proyecto, Response::HTTP_CREATED);
     }
 
-    // Mostrar un proyecto por ID
     public function show($id)
     {
         $proyecto = Proyecto::find($id);
